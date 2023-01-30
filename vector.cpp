@@ -22,8 +22,8 @@ int itc_positive_list(const vector <int> &mass){
 }
 int itc_sl_list(const vector <int> &mass){
 int max=0;
-for (int i = 0; i <mass.size(); i++) {
-        if (mass[i]>mass[i+1]) {
+for (int i = 0; i < mass.size(); i++) {
+        if (mass[i] < mass[i+1]) {
            max++;
         }
         }

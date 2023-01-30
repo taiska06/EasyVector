@@ -21,10 +21,10 @@ int itc_positive_list(const vector <int> &mass){
     return a;
 }
 int itc_sl_list(const vector <int> &mass){
-int max;
+int max=0;
 for (int i = 0; i <mass.size(); i++) {
-        if (mass[i]>max) {
-            max=mass[i];
+        if (mass[i]>mass[i+1]) {
+           max++;
         }
         }
   return max;

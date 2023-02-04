@@ -31,7 +31,7 @@ for (int i = 0; i < mass.size(); i++) {
 }
 bool itc_same_parts_list(const vector <int> &mass){
     int a=0;
-for (int i = 0; i <mass.size()-1; i++) {
+for (int i = 0; i <mass.size(); i++) {
         if ((mass[i]>=0 && mass[i+1]>=0) || (mass[i]<=0 && mass[i+1]<=0)) {
             a++;
         }
